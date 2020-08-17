@@ -44,6 +44,23 @@
       height: 150px;
     }
   }
+
+  .about-section {
+    flex-direction: column;
+
+    .about-portrait {
+      margin: 0;
+    }
+
+    .about-info {
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .resume {
+      margin-top: 1rem;
+    }
+  }
 }
 
 // Mobile

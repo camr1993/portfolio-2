@@ -72,6 +72,52 @@ main {
       margin-top: 20vh;
     }
   }
+  &#about {
+    overflow: hidden;
+  }
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0 0 0;
+
+  .about-portrait {
+    width: 200px;
+    height: 200px;
+    background: url(../img/portrait2.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 3rem 0 0;
+  }
+
+  .about-info {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      padding: 1rem 0;
+    }
+
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .resume {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      i {
+        padding: 0 1rem;
+      }
+      div {
+        padding: 0;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 @import 'mobile';
