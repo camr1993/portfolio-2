@@ -212,6 +212,8 @@ main {
     .menu-branding .portrait {
       width: 150px;
       height: 150px; }
+  #about .lg-heading {
+    margin-top: 3rem; }
   .about-section {
     flex-direction: column; }
     .about-section .about-portrait {
