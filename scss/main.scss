@@ -107,22 +107,27 @@ main {
       cursor: pointer;
     }
 
-    .resume {
+    .resume-blog {
       display: flex;
       align-items: center;
-      cursor: pointer;
 
-      i {
-        padding: 0 1rem;
-      }
-      div {
-        padding: 0;
-        text-decoration: underline;
-      }
+      a {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding-right: 1.5rem;
+        &:hover {
+          color: $secondary-color;
+          @include easeOut();
+        }
 
-      &:hover {
-        color: $secondary-color;
-        @include easeOut();
+        i {
+          padding: 0 0.5rem;
+        }
+        div {
+          padding: 0;
+          text-decoration: underline;
+        }
       }
     }
   }

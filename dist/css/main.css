@@ -178,18 +178,22 @@ main {
     .about-section .about-info a {
       text-decoration: underline;
       cursor: pointer; }
-    .about-section .about-info .resume {
+    .about-section .about-info .resume-blog {
       display: flex;
-      align-items: center;
-      cursor: pointer; }
-      .about-section .about-info .resume i {
-        padding: 0 1rem; }
-      .about-section .about-info .resume div {
-        padding: 0;
-        text-decoration: underline; }
-      .about-section .about-info .resume:hover {
-        color: #eece1a;
-        transition: all 0.5s ease-out; }
+      align-items: center; }
+      .about-section .about-info .resume-blog a {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding-right: 1.5rem; }
+        .about-section .about-info .resume-blog a:hover {
+          color: #eece1a;
+          transition: all 0.5s ease-out; }
+        .about-section .about-info .resume-blog a i {
+          padding: 0 0.5rem; }
+        .about-section .about-info .resume-blog a div {
+          padding: 0;
+          text-decoration: underline; }
 
 .projects {
   margin-top: 3rem;
@@ -279,7 +283,7 @@ main {
     .about-section .about-info {
       align-items: center;
       margin-top: 1rem; }
-    .about-section .resume {
+    .about-section .resume-blog {
       margin-top: 1rem; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
