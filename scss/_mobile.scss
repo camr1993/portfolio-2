@@ -80,6 +80,11 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .boxes {
+    width: 250px;
+    margin: auto;
+  }
 }
 
 // Mobile
@@ -97,6 +102,12 @@
   }
 
   #work {
+    .lg-heading {
+      margin-top: 3rem;
+    }
+  }
+
+  #contact {
     .lg-heading {
       margin-top: 3rem;
     }

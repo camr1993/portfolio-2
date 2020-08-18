@@ -205,6 +205,13 @@ main {
     display: flex;
     justify-content: center; }
 
+.boxes {
+  display: flex;
+  flex-direction: column; }
+  .boxes div {
+    padding: 0rem 0.5rem;
+    text-align: left; }
+
 .btn, .btn-dark, .btn-light {
   padding: 0.4rem 1rem;
   border: 0;
@@ -275,7 +282,10 @@ main {
     .about-section .resume {
       margin-top: 1rem; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes {
+    width: 250px;
+    margin: auto; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -286,6 +296,8 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   #work .lg-heading {
+    margin-top: 3rem; }
+  #contact .lg-heading {
     margin-top: 3rem; }
   .projects {
     grid-template-columns: repeat(1, 1fr);

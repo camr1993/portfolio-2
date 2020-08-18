@@ -151,6 +151,17 @@ main {
   }
 }
 
+// Contact Page
+.boxes {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    padding: 0rem 0.5rem;
+    text-align: left;
+  }
+}
+
 // Button Styles
 .btn {
   padding: 0.4rem 1rem;
