@@ -211,7 +211,8 @@ main {
 
 .boxes {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 1rem; }
   .boxes div {
     padding: 0rem 0.5rem;
     text-align: left; }
