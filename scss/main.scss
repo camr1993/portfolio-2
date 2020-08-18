@@ -77,10 +77,13 @@ main {
   }
 }
 
+// About Me
+
 .about-section {
   display: flex;
   align-items: center;
   margin: 3rem 0 0 0;
+  color: set-text-color($primary-color);
 
   .about-portrait {
     width: 200px;
@@ -123,6 +126,54 @@ main {
       }
     }
   }
+}
+
+// Work/Projects
+
+.projects {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+
+    &:hover {
+      box-shadow: 0px 0px 10px 0px $secondary-color;
+      @include easeOut;
+    }
+  }
+
+  .item div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// Button Styles
+.btn {
+  padding: 0.4rem 1rem;
+  border: 0;
+  margin: 0.3rem 0.5rem;
+  border-radius: 5px;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    @include easeOut;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
 }
 
 #main-footer {

@@ -1,9 +1,18 @@
 // Widescreens
 @include mediaXl {
+  .projects {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); // change to 4 when you have another project!!!
+  }
 }
 
 // Desktops & Laptops
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Tablets & Small Laptops
@@ -67,6 +76,10 @@
       margin-top: 1rem;
     }
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // Mobile
@@ -81,5 +94,16 @@
       margin-top: 1rem;
       font-size: 5rem;
     }
+  }
+
+  #work {
+    .lg-heading {
+      margin-top: 3rem;
+    }
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1.5rem;
   }
 }
